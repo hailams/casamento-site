@@ -2,117 +2,151 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casamento Haila & Thaynan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosso Casamento</title>
   <style>
+    /* Paleta de cores: branco, azul claro, cinza suave */
+    :root {
+      --branco: #ffffff;
+      --azul-claro: #cce5f6;
+      --azul-hydrangea: #a7c7e7;
+      --cinza-suave: #f5f7fa;
+      --cinza-escuro: #4a4a4a;
+      --rosa-branco: #f9f7f7;
+    }
+
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fffaf7;
-      color: #4b4b4b;
+      font-family: 'Georgia', serif;
+      background-color: var(--cinza-suave);
+      color: var(--cinza-escuro);
+      line-height: 1.6;
     }
+
     header {
+      background: linear-gradient(135deg, var(--azul-claro), var(--azul-hydrangea));
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: #f9f3ef;
+      color: var(--branco);
+      position: relative;
+      overflow: hidden;
     }
-    header img {
-      width: 120px;
-      margin-bottom: 1rem;
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -20px; left: -20px; right: -20px; bottom: -20px;
+      background: url('https://i.imgur.com/WXRM9Tk.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
     }
-    h1, h2 {
+
+    header h1 {
       font-family: 'Playfair Display', serif;
-      color: #5D8AA8; /* Dusty Blue */
+      font-size: 3rem;
+      margin: 0 0 0.3rem;
+      position: relative;
+      z-index: 1;
+      letter-spacing: 0.1em;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
     }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
+
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin: 0;
+      position: relative;
+      z-index: 1;
     }
-    h2 {
-      font-size: 1.8rem;
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--rosa-branco);
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
+
     section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
+      margin-bottom: 2rem;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.2rem;
-      margin: 0.5rem;
-      border-radius: 25px;
-      text-decoration: none;
-      color: white;
-      background-color: #5D8AA8; /* Dusty Blue */
-      font-weight: bold;
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--azul-hydrangea);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--azul-claro);
+      padding-bottom: 0.3rem;
     }
-    .gallery img {
-      width: 100%;
-      max-width: 240px;
-      margin: 10px;
-      border-radius: 10px;
+
+    p {
+      font-size: 1.1rem;
+      color: var(--cinza-escuro);
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+
     footer {
       text-align: center;
+      padding: 1.5rem;
+      color: var(--cinza-escuro);
       font-size: 0.9rem;
-      padding: 1rem;
-      color: #777;
+      background: var(--cinza-suave);
+      margin-top: 3rem;
+      font-style: italic;
+    }
+
+    /* Botão RSVP */
+    .btn-rsvp {
+      display: inline-block;
+      background-color: var(--azul-hydrangea);
+      color: var(--branco);
+      padding: 0.7rem 1.8rem;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(167,199,231,0.4);
+      font-family: 'Georgia', serif;
+      margin-top: 1rem;
+    }
+
+    .btn-rsvp:hover {
+      background-color: var(--azul-claro);
+      box-shadow: 0 6px 12px rgba(204,229,246,0.6);
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <img src="https://hailams.github.io/casamento-site/monograma.png" alt="Monograma H & T" />
     <h1>Haila & Thaynan</h1>
-    <p>Nosso grande dia: 31 de maio de 2025</p>
+    <p>Nosso Casamento - 10 de Outubro de 2025</p>
   </header>
+  <main>
+    <section>
+      <h2>A Cerimônia</h2>
+      <p>Venha celebrar conosco o início da nossa nova vida juntos, em uma cerimônia cheia de amor e emoção, rodeada pelas nossas flores favoritas: rosas brancas e hydrangeas azuis.</p>
+    </section>
+    <section>
+      <h2>Local e Horário</h2>
+      <p>Local: Igreja Nossa Senhora do Rosário<br />
+         Horário: 16h00</p>
+    </section>
+    <section>
+      <h2>Confirmação de Presença</h2>
+      <p>Por favor, confirme sua presença para que possamos organizar tudo com muito carinho.</p>
+      <a href="#" class="btn-rsvp">Confirmar Presença</a>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Haila & Thaynan - Com amor e gratidão
+  </footer>
+</body>
+</html>
 
-  <section>
-    <h2>Sobre nós</h2>
-    <p>Com muita alegria, convidamos você para celebrar conosco o amor e a união no nosso casamento.</p>
-  </section>
-
-  <section>
-    <h2>Cerimônia</h2>
-    <p><strong>Data:</strong> Sábado, 31 de maio de 2025</p>
-    <p><strong>Horário:</strong> 14h00</p>
-    <p><strong>Local:</strong> Saint Anthony Parish, Everett - MA</p>
-  </section>
-
-  <section>
-    <h2>Recepção</h2>
-    <p><strong>Horário:</strong> 15h15</p>
-    <p><strong>Local:</strong> Restaurante Oliveiras, Somerville - MA</p>
-  </section>
-
-  <section>
-    <h2>Presentes</h2>
-    <p>Sua presença é o melhor presente, mas se desejar nos abençoar com um valor, ficaremos muito agradecidos!</p>
-    <p><strong>Zelle:</strong> 857 261 0742</p>
-    <a class="btn" href="https://paypal.me/HailaMoraesScheffer" target="_blank">Presentear via PayPal</a>
-  </section>
-
-  <section>
-    <h2>Galeria</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/240x160?text=Foto+1" alt="Foto 1">
-      <img src="https://via.placeholder.com/240x160?text=Foto+2" alt="Foto 2">
-      <img src="https://via.placeholder.com/240x160?text=Foto+3" alt="Foto 3">
-    </div>
-  </section>
-
-  <section>
-    <h2>Contato</h2>
-    <p>Caso tenha dúvidas ou precise falar com a gente:</p>
-    <a class="btn" href="https://wa.me/18572610742" target="_blank">Falar com Haila</a>
-    <a class="btn" href="https://wa.me/18575449684" target="_blank">Falar com Thaynan</a>
-  </section>
 
   <footer>
     <p>Com carinho, Haila & Thaynan — 2025</p>
